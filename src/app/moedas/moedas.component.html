@@ -1,0 +1,54 @@
+<form>
+    <br>
+    <div class="text-center mb-5">
+      <h3>Conversor de Moedas</h3>
+    </div>
+  
+    <div class="form-floating mb-3">
+      <input type="number" class="form-control" name="real" [(ngModel)]="real">
+      <label >Coloque a quantidade em Real</label>
+    </div>
+  
+    <div class="form-floating mb-3">
+      <input type="number" class="form-control" name="dolar" [(ngModel)]="dolar">
+      <label >Coloque o câmbio do Dólar</label>
+    </div>
+  
+    <div class="form-floating mb-3">
+      <input type="number" class="form-control" name="euro" [(ngModel)]="euro">
+      <label >Coloque o câmbio do Euro</label>
+    </div>
+  
+    <div class="form-floating mb-3">
+      <input type="number" class="form-control" name="libra" [(ngModel)]="libra">
+      <label >Coloque o câmbio em Libra</label>
+    </div>
+  
+    <div class="button mb-3">
+      <button type="button" class="btn btn-primary" (click)="converter()">Converter</button>
+    </div>
+  
+    <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          <div class="form-floating mb-4">
+            <input type="number" class="form-control" name="resultadoD" disabled [(ngModel)]="resultadoD">
+            <label >Resultado em Dólar</label>
+          </div>
+        </div>
+        <div class="col">
+          <div class="form-floating mb-4">
+            <input type="number" class="form-control" name="resultadoE" disabled [(ngModel)]="resultadoE">
+            <label >Resultado em Euro</label>
+          </div>
+        </div>
+        <div class="col">
+          <div class="form-floating mb-4">
+            <input type="number" class="form-control" name="resultadoL" disabled [(ngModel)]="resultadoL">
+            <label >Resultado em Libra</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </form>
